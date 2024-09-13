@@ -1,0 +1,77 @@
+/* Basic reset for margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.header {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    display: flex;
+    justify-content:flex-start;
+    gap: 2%;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+}
+
+/* Container for the search bar */
+.search-container {
+    display: flex;
+    width: 100%;
+    max-width: 600px; 
+}
+
+/* Styling the input field */
+.search-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    flex: 1; /* Makes the input field take up remaining space */
+    font-size: 16px;
+    outline: none;
+}
+
+/* Styling the button */
+.search-container button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+h1{
+    color: rgb(80, 77, 77);
+}
+
+.ul-div{
+    font-size: 20px;
+    position:absolute;
+    top: 100px;
+}
+@media(max-width : 600px){
+    .ul-div{
+        top: 150px;
+    }
+    .header{
+        display:inline-block;
+    }
+}
+@media(min-width : 600px) and (max-width : 990px){
+    .ul-div{
+        top: 140px;
+    }
+}
